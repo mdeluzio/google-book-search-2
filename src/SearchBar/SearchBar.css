@@ -1,0 +1,19 @@
+.SearchBar {
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #ABABAB;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input#book {
+    margin-left: .3em;;
+}
+
+.SearchBar_form button {
+    border-radius: 5px;
+    border: 1px solid #75A8EE;
+}
