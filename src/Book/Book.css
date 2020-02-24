@@ -1,0 +1,21 @@
+.Book {
+    display: flex;
+    margin: 2em;
+    border-bottom: solid 1px gray ;
+}
+
+.book_details_container {
+    width: 100%;
+}
+
+.book_author {
+    margin-bottom: 0;
+}
+
+.book_price {
+    margin-top: 0;
+}
+
+.book_description {
+    margin-bottom: 4em;
+}

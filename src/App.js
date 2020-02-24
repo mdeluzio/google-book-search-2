@@ -24,7 +24,6 @@ class App extends React.Component {
         return res.json();
       })
       .then(data => {
-        console.log(data)
         this.setState({
           books: data.items
         })
@@ -43,6 +42,7 @@ class App extends React.Component {
       : ""
     ;
 
+    console.log(this.state.books)
     return (
       <div className="App">
         <div className="App_header">
@@ -50,7 +50,7 @@ class App extends React.Component {
           {error}
         </div>
         <SearchOptions getBooks={searchTerm => this.getBooksOnSearch(searchTerm)} />
-        <BookList />
+        <BookList books={this.state.books} />
       </div>
     );
   };
