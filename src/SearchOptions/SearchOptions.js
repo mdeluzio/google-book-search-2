@@ -7,7 +7,7 @@ class SearchOptions extends React.Component {
     render() {
         return (
             <div className="SearchOptions">
-                <SearchBar />
+                <SearchBar getBooks={this.props.getBooks} />
                 <SearchFilters />
             </div>
         );
